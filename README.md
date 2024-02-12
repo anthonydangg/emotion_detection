@@ -54,7 +54,10 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-![fer_img](fer_img.jpeg)
+<div align="center">
+  <img src="fer_img.jpeg" alt="Logo" width="500" height="400">
+</div>
+
 
 Information from emotions can greatly benefit researchers as it can be used as an informative predictor for mental health symptoms. Many researchers may find themselves needing to collect emotional data from facial expressions, however, there is no universal standard. While there are big companies with apps in this field already, they do not offer a solution that emphasizes privacy and convenience. We developed a mobile app that researchers can use to easily gather data about emotions for research purposes. The app works as a skeleton that can plug in machine learning models that predict emotions from facial expressions.
 
