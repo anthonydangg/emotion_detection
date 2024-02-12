@@ -77,22 +77,39 @@ Information from emotions can greatly benefit researchers as it can be used as a
 
 The app is currently in development but a developer version can be ran with minimal features. We plan to have an easier way to run the app in the future. To do so follow the steps below.
 
-The EDA notebook is for context on what kind of models are being used in the app.
+The EDA notebook is for context on what kind of models are being used in the app. The data used in that notebook can be found [here](https://paperswithcode.com/dataset/fer2013).
 
 ### Prerequisites
 
-You will need the following:
+You will need the following to run the app:
 * [Flutter IOS](https://docs.flutter.dev/get-started/install/macos/mobile-ios)
 * Visual Studio Code + [Flutter Extension](https://marketplace.visualstudio.com/items?itemName=Dart-Code.flutter)
 * [XCode 15](https://developer.apple.com/xcode/)
 * [CocoaPods](https://guides.cocoapods.org/using/getting-started.html#installation)
 * iPhone + USB
 
+The dependencies for the EDA notebook include:
+- Pandas (pandas)
+- NumPy (numpy)
+- OS (os)
+- Matplotlib (matplotlib)
+- sklearn
+- mlxtend
+- keras
+
+
+
 ### Installation
 
    ```sh
    git clone https://github.com/anthonydangg/emotion_detection.git
    ```
+
+To install all required dependencies for the EDA notebook. Run below:
+
+  ```sh
+  pip install pandas numpy matplotlib scikit-learn mlxtend keras
+  ```
 
 
 
