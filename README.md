@@ -77,7 +77,7 @@ Information from emotions can greatly benefit researchers as it can be used as a
 
 The app is currently in development but a developer version can be ran with minimal features. We plan to have an easier way to run the app in the future. To do so follow the steps below.
 
-The EDA notebook is for context on what kind of models are being used in the app. The data used in that notebook can be found [here](https://paperswithcode.com/dataset/fer2013).
+The EDA notebook is for context on what kind of models are being used in the app. The data used in that notebook can be found [here](https://paperswithcode.com/dataset/fer2013). Be sure to change the directory of the data in the notebook to where you downloaded it or else it won't run.
 
 ### Prerequisites
 
