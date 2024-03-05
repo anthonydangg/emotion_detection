@@ -1,6 +1,6 @@
 import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
-import 'package:tflite_v2/tflite_v2.dart';
+import 'package:tflite/tflite.dart';
 import 'package:emotion_detection_app_v2/main.dart';
 
 class MyWidget extends StatefulWidget {
@@ -18,8 +18,8 @@ class _MyWidgetState extends State<MyWidget> {
   @override
   void initState() {
     super.initState();
-    loadCamera();
     loadmodel();
+    loadCamera();
   }
 
   loadCamera(){
@@ -32,7 +32,7 @@ class _MyWidgetState extends State<MyWidget> {
         setState(() {
           cameraController!.startImageStream((imageStream) { 
             cameraImage = imageStream;
-            // runModel();
+            runModel();
           });
         });
       }
@@ -51,7 +51,7 @@ class _MyWidgetState extends State<MyWidget> {
       rotation: 90,
       numResults: 2,
       threshold: 0.1,
-      asynch: true);
+      asynch: true); //change to false if it doesn't work
       
       predictions!.forEach((element) {
         setState(() {
@@ -62,9 +62,8 @@ class _MyWidgetState extends State<MyWidget> {
   }
 
   loadmodel() async {
-    await Tflite.loadModel(
-    model: "assets/model.tflite",
-    labels: "assets/labels.txt");
+    await Tflite.loadModel(model: "assets/model.tflite", labels: "assets/labels.txt");
+    print('ran');
   }
 
   @override
