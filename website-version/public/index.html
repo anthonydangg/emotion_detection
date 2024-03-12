@@ -20,9 +20,17 @@
         <img src="images/cake2.jpeg" alt="Cake 2" id="cake" onclick="selectCake('cake2')">
         <img src="images/cake3.jpeg" alt="Cake 3" id="cake" onclick="selectCake('cake3')">
     </div>
-
-    <div id="feedback" style="display: none;">
+    <h3 id="feedbackmessage" style="display: none;"></h3>
+    <div id="feedbackBad" style="display: none;">
         <img id="feedbackImage" src="images/angry-face.jpeg" alt="Feedback">
+    </div>
+
+    <div id="feedbackGood" style="display: none;">
+        <img id="feedbackImageGood" src="images/happy-face.jpeg" alt="Feedback">
+    </div>
+
+    <div id="predictionScreen" style="display: none;">
+        <h3 id="predictionMessage"></h3>
     </div>
     <canvas id="canvas" width="320" height="240" style="display: none;"></canvas>
 
