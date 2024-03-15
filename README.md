@@ -18,8 +18,7 @@
 <h3 align="center">Facial Expression Recognition</h3>
 
   <p align="center">
-    Predicting Early Signs of
-Psychopathological Disease Among Children
+    Predicting Early Signs of Psychopathological Disease Among Children
     <br />
   </p>
 </div>
@@ -38,7 +37,7 @@ Psychopathological Disease Among Children
 </div>
 
 
-We are building an app that streamlines an existing research process, known as Incredible Cake Kids, which creates an interactive user experience for children, while also allowing us to collect valuable data that can give insight into the child's risk of mental heath deterioration.
+We are building an app that streamlines an existing research process, known as Incredible Cake Kids, which creates an interactive user experience for children, while also allowing us to collect valuable data that can give insight into the child's risk of mental heath deterioration. See more details [here](https://varundinesh0.github.io/capstone-website/).
 
 There are two version of this app. There is a website version that can easily be ran in your browser and a iOS version (*incomplete, doesn't incorporate the cake research task*).
 
