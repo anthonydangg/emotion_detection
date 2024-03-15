@@ -28,37 +28,44 @@ function selectCake(cake) {
     setTimeout(() => {
         
         let feedbackImage = ""
-
+        console.log('round:', round);
         if (round == 1) {
             console.log("HERE ROUND 1")
             feedbackImage = document.getElementById('feedbackImageBad');
             document.getElementById('feedbackBad').style.display = 'block';
-            //document.getElementById('feedbackmessage').style.display = 'block'; 
+            document.getElementById('feedbackmessageBad').style.display = 'block'; 
+            
 
         } else if (round == 2) {
             //console.log("HERE ROUND 2")
             feedbackImage = document.getElementById('feedbackImageBad');
             document.getElementById('feedbackBad').style.display = 'block';
             //document.getElementById('feedbackmessage').style.display = 'block'; 
+            document.getElementById('feedbackmessageBad').style.display = 'block'; 
+            console.log("Feedback message printed:", document.getElementById('feedbackmessageBad').textContent);
 
         } else if (round == 3) {
             feedbackImage = document.getElementById('feedbackImageGood');
             document.getElementById('feedbackGood').style.display = 'block';
             
-            document.getElementById('feedbackmessage').style.display = 'block'; 
-            // document.getElementById('feedbackmessage').style.innerText = 'Nice!'; 
+            document.getElementById('feedbackmessageGood').style.display = 'block'; 
+            //document.getElementById('feedbackmessage').style.innerText = 'Nice!'; 
+
+
 
         } else if (round == 4) {
             feedbackImage = document.getElementById('feedbackImageBad');
             document.getElementById('feedbackBad').style.display = 'block';
 
             //document.getElementById('feedbackmessage').style.display = 'block'; 
+            document.getElementById('feedbackmessageBad').style.display = 'block';
 
         } else if (round == 5) {
             feedbackImage = document.getElementById('feedbackImageBad');
             document.getElementById('feedbackBad').style.display = 'block';
 
-            //document.getElementById('feedbackmessage').style.display = 'block'; 
+            //document.getElementById('feedbackmessage').style.display = 'block';
+            document.getElementById('feedbackmessageBad').style.display = 'block'; 
 
         } 
         
@@ -68,7 +75,7 @@ function selectCake(cake) {
         document.getElementById('cakeSelection').style.display = 'none';
         
         
-        document.getElementById('feedbackmessage').style.display = 'block'; 
+       
 
 
         // This is where you'd add logic to choose thumbs up or down
@@ -81,19 +88,22 @@ function selectCake(cake) {
                 console.log(result); // Output: "sad"
             });
             prediction.then(result => {
-                document.getElementById('predictionMessage').innerText = result;
-                if (round == 5) {
+                document.getElementById('predictionMessage').innerText = "Your emotion state appears to be " + result;
+                if (round == 6) {
                     document.getElementById('predictionScreen').style.display = 'block';
                 } 
                 
                 document.getElementById('feedbackBad').style.display = 'none';
                 document.getElementById('feedbackGood').style.display = 'none';
-                document.getElementById('feedbackmessage').style.display = 'none';
+                //document.getElementById('feedbackmessage').style.display = 'none';
+
+                document.getElementById('feedbackmessageBad').style.display = 'none'; 
+                document.getElementById('feedbackmessageGood').style.display = 'none'; 
 
                 main_function();
             });
 
-        }, 2000);
+        }, 4000);
     }, 2000);
     
     image_data = captureFrameToTensor();
@@ -193,7 +203,7 @@ function main_function() {
     
     let newContent = ""
     setTimeout(function() {
-
+        console.log('round', round);
         if (round == 2) {
 
             newContent = `
@@ -227,8 +237,14 @@ function main_function() {
 
         } else if (round == 6) {
 
-            document.getElementById('instructions').innerText = "All done!!"
-            document.getElementById('instructions').style.display = 'block'; 
+            console.log('hi');
+            document.getElementById('instructions').innerText = "All done!!";
+            document.getElementById('instructions').style.display = 'block';
+            document.getElementById('instructions').style.fontSize = '60px';
+
+            // Set font weight to bold
+            document.getElementById('instructions').style.fontWeight = 'bold';
+
 
         }
 
@@ -239,9 +255,10 @@ function main_function() {
 
         // Make sure the cakeSelection div is visible
         cakeSelectionDiv.style.display = "block";
-    
+        
         round += 1;
-        document.getElementById('instructions').style.display = 'none'; 
+        
+        //document.getElementById('instructions').style.display = 'none'; 
     }, 1000);
 
     

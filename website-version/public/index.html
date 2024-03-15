@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <h1 id="cake-header">Welcome to the Cake Selector!</h1>
+        <h1 id="cake-header">Welcome to the Toddler's Cake Selector!</h1>
     </header>
     <button id="startButton">Start</button>
     <video id="video" width="320" height="240" autoplay style="display: none; position: absolute; right: 0; top: 0;"></video>
@@ -20,7 +20,8 @@
         <img src="images/cake2.jpeg" alt="Cake 2" id="cake" onclick="selectCake('cake2')">
         <img src="images/cake3.jpeg" alt="Cake 3" id="cake" onclick="selectCake('cake3')">
     </div>
-    <h3 id="feedbackmessage" style="display: none;"></h3>
+    <h3 id="feedbackmessageGood" style="display: none;">Nice!</h3>
+    <h3 id="feedbackmessageBad" style="display: none;">Oh no!!</h3>
     <div id="feedbackBad" style="display: none;">
         <img id="feedbackImage" src="images/angry-face.jpeg" alt="Feedback">
     </div>
@@ -30,7 +31,7 @@
     </div>
 
     <div id="predictionScreen" style="display: none;">
-        <h3 id="predictionMessage"></h3>
+        <h3 id="predictionMessage">Your emotional state appears to be:</h3>
     </div>
     <canvas id="canvas" width="320" height="240" style="display: none;"></canvas>
 
