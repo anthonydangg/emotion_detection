@@ -37,9 +37,9 @@
 </div>
 
 
-We are building an app that streamlines an existing research process, known as Incredible Cake Kids, which creates an interactive user experience for children, while also allowing us to collect valuable data that can give insight into the child's risk of mental heath deterioration. See more details [here](https://varundinesh0.github.io/capstone-website/).
+We are building an app that streamlines an existing research process, known as Incredible Cake Kids, which creates an interactive user experience for children, while also allowing us to collect valuable data that can give insight into the child's risk of mental health deterioration. See more details [here](https://varundinesh0.github.io/capstone-website/).
 
-There are two version of this app. There is a website version that can easily be ran in your browser and a iOS version (*incomplete, doesn't incorporate the cake research task*).
+There are two versions of this app. There is a website version that can easily be run in your browser and an iOS version (*incomplete, doesn't incorporate the cake research task*).
 
 
 
